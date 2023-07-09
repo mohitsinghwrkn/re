@@ -1,0 +1,141 @@
+.sidebar {
+  position: sticky;
+  top: 4vw;
+  border-radius: 1vw;
+  width: 20vw;
+  border-bottom: 2px solid red;
+}
+
+.sidebar-image {
+  padding: 5px;
+  width: 20vw;
+  border-radius: 2vw;
+}
+
+.sidebar-socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 2vw;
+  padding: 5px;
+}
+
+.sidebar-icons {
+  padding: 1vw;
+  font-size: 32px;
+  text-decoration: none;
+  margin: 2px;
+  border-radius: 50%;
+}
+
+.sidebar-icons:hover {
+  color: white;
+  background-color: black;
+}
+
+.sidebar-icons.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.sidebar-icons.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.sidebar-icons.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.sidebar-icons.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.sidebar-icons.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.sidebar-icons.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.sidebar-icons.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.sidebar-icons.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.sidebar-icons.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.sidebar-icons.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.sidebar-icons.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.sidebar-icons.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.sidebar-icons.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.sidebar-icons.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.sidebar-icons.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.sidebar-icons.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.sidebar-icons.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.sidebar-icons.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.sidebar-icons.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.sidebar-icons.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.sidebar-icons.fa-rss {
+  background: #ff6600;
+  color: white;
+}

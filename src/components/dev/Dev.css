@@ -1,0 +1,23 @@
+.dev {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.dev-box {
+    text-align: center;
+    margin: 2vw auto;
+    border-radius: 16px;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 green, 0 6px 20px 0 black;
+}
+
+.dev-image {
+    height: 20vw;
+}
+
+.dev-heading {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+}

@@ -1,0 +1,12 @@
+.CrudOps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.CrudOps-form {
+    width: 75vw;
+    padding: 1vw;
+    /* margin: 1vw; */
+}

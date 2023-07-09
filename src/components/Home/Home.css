@@ -1,0 +1,9 @@
+.home {
+  text-align: center;
+}
+
+.home-image1 {
+  height: 25vw;
+  /* border-radius: .5vw; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 

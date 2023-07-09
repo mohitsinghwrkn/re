@@ -1,0 +1,33 @@
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+.blog-blog{
+    text-align: center;
+    padding: 16px;
+    flex: 20vw;
+    margin: 1vw;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog-image{
+    text-align: center;
+    height: 10vw;
+}
+
+.blog-blog:hover {
+    outline: 5px solid rebeccapurple;
+}
+
+.blog-title{
+    font-size: 32px;
+}
+
+.blog-description{
+    text-align: center;
+    font-size: 16px;
+}

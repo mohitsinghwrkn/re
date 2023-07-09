@@ -1,0 +1,17 @@
+.UserBlogsDiv{
+    width: 80vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw;
+    border: 1px solid orangered;
+}
+
+.UserBlogsImage{
+    height: 20vw;
+}
+
+.UserBlogsTitle{
+    font-size: larger;
+    font-weight: bold;
+}

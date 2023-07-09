@@ -1,0 +1,37 @@
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1vw;
+}
+
+.tile {
+    display: flex;
+
+    /* lower to add asymmetric design*/
+    /* flex: 20vw; */
+
+    /* higher to add symmetric design */
+    flex: 25vw;
+    
+    align-items: center;
+    margin: 1vw;    
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tile-image {
+    height: 7.5vw;
+}
+
+.tile:hover {
+    outline: 2px dashed rebeccapurple;
+}
+
+.tile-title{
+    margin-left: 16px;
+    font-size: 32px;
+}

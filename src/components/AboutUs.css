@@ -1,0 +1,42 @@
+.aboutUs {
+    margin-bottom: 2vw;
+}
+
+.aboutUs-top {
+    color:  black;
+    text-align: center;
+    padding: 5vw;
+    background-color: #FBB917;
+}
+
+.aboutUs-profiles {
+    /* margin: 2vw; */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.aboutUs-profile {
+    width: 25vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aboutUs-button {
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 0.5vw;
+}
+
+.aboutUs-image {
+    height: 20vw;
+    /* width: 20vw; */
+    border-radius: 1vw;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+    border-bottom: 5px solid black;
+}

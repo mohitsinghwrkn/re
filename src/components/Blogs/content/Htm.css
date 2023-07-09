@@ -1,0 +1,7 @@
+.Htm {
+    width: 100%;
+    font-size: 2vw;
+    border: 1px solid orangered;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}

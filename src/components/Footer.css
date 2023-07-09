@@ -1,0 +1,20 @@
+.footer{
+    text-align: center;
+    background-color: rgb(8,8,8);
+    border-bottom : 1px solid black;
+}
+
+.footer-form{
+    font-weight: bold;
+    color: white;
+}
+
+.footer-form-button{
+    background-color: red;
+    color: white;
+}
+
+.footer-copyright{
+    color: white;
+}
+
