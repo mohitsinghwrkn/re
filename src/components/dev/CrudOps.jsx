@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './CrudOps.css';
 import axios from "axios";
+const EX = import.meta.env.VITE_EX 
 
 const CrudOps = () => {
 
@@ -9,7 +10,7 @@ const CrudOps = () => {
     const [Employee, setEmployee] = useState({})
 
     useEffect(() => {
-        axios.get('http://172.16.30.30:5555/ex/rEmployee')
+        axios.get(EX + '/ex/rEmployee')
             .then(res => setEmployeeData(res.data))
     }, [crudRefresh])
 
@@ -23,7 +24,7 @@ const CrudOps = () => {
             email: e.target.email.value,
             phone: e.target.phone.value,
         }
-        await axios.post('http://localhost:5555/ex/cEmployee', createData)
+        await axios.post(EX + '/ex/cEmployee', createData)
             .then(res => console.log(res.data))
         document.getElementById("resetC").reset()
         handleCrudRefresh()
@@ -33,7 +34,7 @@ const CrudOps = () => {
         e.preventDefault();
         const paramString = e.target.id.value
         // e.target.id.value = '';
-        axios.get('http://172.16.30.30:5555/ex/rEmployee/' + paramString)
+        axios.get(EX + '/ex/rEmployee/' + paramString)
             .then(res => setEmployee(res.data))
     }
 
@@ -46,7 +47,7 @@ const CrudOps = () => {
             phone: e.target.phone.value,
         }
         const paramString = e.target.id.value
-        await axios.post('http://localhost:5555/ex/uEmployee/' + paramString, updateData)
+        await axios.post(EX + '/ex/uEmployee/' + paramString, updateData)
             .then(res => console.log(res.data))
         document.getElementById("resetU").reset()
         document.getElementById("crudR-btn").click();
@@ -57,7 +58,7 @@ const CrudOps = () => {
         e.preventDefault();
         const paramString = e.target.id.value
         e.target.id.value = '';
-        axios.get('http://localhost:5555/ex/dEmployee/' + paramString)
+        axios.get(EX + '/ex/dEmployee/' + paramString)
             .then(res => console.log(res.data))
         document.getElementById("crudR-btn").click();
         handleCrudRefresh()
@@ -99,7 +100,7 @@ const CrudOps = () => {
                     <button style={{backgroundColor:"royalblue", border:"none", color:"white"}} id='crudR-btn'>Read</button>
                 </form><hr />
                 <p>EMPLOYEE DETAILS</p>
-                "Name": "{Employee.firstName} {Employee.lastName}", "Email": "{Employee.email}", "Phone": "{Employee.phone}" "Employee ID":{Employee._id}
+                "Name": {Employee.firstName} {Employee.lastName}, "Email": {Employee.email}, "Phone": {Employee.phone} "Employee ID":{Employee._id}
             </div>
             <div style={{ color: "tomato" }} className='CrudOps-form'>
                 <h1>Update</h1>

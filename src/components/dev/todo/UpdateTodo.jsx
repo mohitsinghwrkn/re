@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+const EX = import.meta.env.VITE_EX 
 
 function UpdateTodo({ _id, closeHandler, updateHandler }) {
   const [todoInfo, setTodoInfo] = useState({ title: "", description: "" });
@@ -8,11 +9,11 @@ function UpdateTodo({ _id, closeHandler, updateHandler }) {
     setTodoInfo((data) => ({ ...data, [e.target.name]: e.target.value }));
   };
 
-  const submitHanlder = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
 
     axios
-      .put(`http://localhost:5555/api/todo/${_id}`, todoInfo)
+      .put(EX+`/api/todo/${_id}`, todoInfo)
       .then((res) => {
         setTodoInfo({ title: "", description: "" });
       })
@@ -25,7 +26,7 @@ function UpdateTodo({ _id, closeHandler, updateHandler }) {
     <form
       className="form-container"
       onSubmit={(e) => {
-        submitHanlder(e);
+        submitHandler(e);
         updateHandler();
         closeHandler();
       }}

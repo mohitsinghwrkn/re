@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import './UserBlogs.css'
+const EX = import.meta.env.VITE_EX 
 
 const UserBlogs = () => {
     const [userBlogs, setUserBlogs] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5555/ex/userBlogs')
+        fetch(EX+'/ex/userBlogs')
             .then(res => res.json())
             .then(res => setUserBlogs(res))
     }, [])

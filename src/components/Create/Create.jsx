@@ -1,12 +1,13 @@
 import React from 'react'
 import './Create.css'
 import Wallpaper from '../../assets/nat.jpg'
+const EX = import.meta.env.VITE_EX 
 
 const Create = () => {
   return (
     <div className='create'>
         <img className='create-image' src={Wallpaper} alt="" />
-        <form action="http://172.16.30.30:5555/ex/create" className='create-form' method="post" enctype="multipart/form-data">
+        <form action={EX+"/ex/create"} className='create-form' method="post" enctype="multipart/form-data">
           {/* <div>Create BLOGS as Administrator</div> */}
           <h1 style={{textAlign:"center"}}>Create BLOG Here</h1><hr />
           <label htmlFor="title">Title</label>

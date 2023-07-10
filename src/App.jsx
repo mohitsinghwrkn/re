@@ -26,9 +26,9 @@ import AdminBlogs from './components/Blogs/AdminBlogs';
 const App = () => {
   return (
     <div style={{backgroundColor:"whitesmoke"}}>
-    <div style={{border:"2px solid orangered"}}>
-      mohit: this is a testing prototype!
-    </div>
+    {/* <div style={{border:"2px solid orangered"}}>
+      mohit: this is a testing prototype! env {import.meta.env.VITE_SOME_KEY}
+    </div> */}
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>

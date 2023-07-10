@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import UpdateTodo from "./UpdateTodo";
 import TodoLists from "./TodoLists";
+const EX = import.meta.env.VITE_EX 
 
 export function DisplayTodo() {
   const [id, setId] = useState("");
@@ -13,7 +14,7 @@ export function DisplayTodo() {
   useEffect(
     function () {
       axios
-        .get("http://localhost:5555/api/todo")
+        .get(EX+"/api/todo")
         .then((res) => {
           setInfoTodo(res.data);
           console.log(res.data);
@@ -35,7 +36,7 @@ export function DisplayTodo() {
   };
 
   const deleteHandler = (e) => {
-    axios.delete(`http://localhost:5555/api/todo/${e.target.name}`);
+    axios.delete(EX+`/api/todo/${e.target.name}`);
 
     setInfoTodo((data) => {
       return data.filter((todo) => todo._id !== e.target.name);

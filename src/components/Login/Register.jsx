@@ -4,6 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
+const EX = import.meta.env.VITE_EX 
 
 function Register() {
   const [validated, setValidated] = useState(false);
@@ -19,7 +20,7 @@ function Register() {
 
   return (
     <div style={{ margin: "2vw 20vw" }}>
-      <Form noValidate validated={validated} onSubmit={handleSubmit} action='http://172.16.30.30:5555/ex/register' method='post'>
+      <Form noValidate validated={validated} onSubmit={handleSubmit} action={EX+"/ex/register"} method='post'>
         <Row className="mb-3">
           <Form.Group as={Col} md="4" controlId="validationCustom01">
             <Form.Label>Name</Form.Label>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+const EX = import.meta.env.VITE_EX 
 
 const CreateTodo = () => {
   const [todoInfo, setTodoInfo] = useState({ title: "", description: "" });
@@ -14,7 +15,7 @@ const CreateTodo = () => {
     console.log('ok')
 
     axios
-      .post("http://localhost:5555/api/todo/", todoInfo)
+      .post(EX+"/api/todo/", todoInfo)
       .then((res) => {
         setTodoInfo({ title: "", description: "" });
         console.log(res.data.message);
@@ -27,7 +28,7 @@ const CreateTodo = () => {
 
   return (
     <section className="container">
-      <Link to="/">
+      <Link to="/todo">
         <button type="button" className="todo-btn todo-btn-back">
           🔙 back
         </button>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+const EX = import.meta.env.VITE_EX 
 
 const BlogData = () => {
     const urlString = window.location.href
@@ -23,7 +24,7 @@ const BlogData = () => {
 
     const [data, setData] = useState()
     useEffect(() => {
-        fetch('http://localhost:5555/blog/' + paramString)
+        fetch(EX+'/blog/' + paramString)
             .then(res => res.text())
             .then(res => setData(res))
     }, [])

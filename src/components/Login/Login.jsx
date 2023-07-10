@@ -1,11 +1,12 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Register from './Register';
+const EX = import.meta.env.VITE_EX 
 
 function Login() {
   return (
     <div style={{ margin: "2vw 30vw" }}>
-      <Form action='http://172.16.30.30:5555/ex/login' method='post'>
+      <Form action={EX+'/ex/login'} method='post'>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" name='email' />

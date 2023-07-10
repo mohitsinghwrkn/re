@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+const EX = import.meta.env.VITE_EX 
 
 const Footer = () => {
   return (
@@ -56,7 +57,7 @@ const Footer = () => {
         </a>
       </div>
       <br />
-      <form action="http://172.16.30.30:5555/ex/subscribe" className='footer-form' method='post'>
+      <form action={EX+"/ex/subscribe"} className='footer-form' method='post'>
         <input style={{width:"25vw"}} type="email" name='subscribe' placeholder='Email Address'required/>
         <button type='submit' className='footer-form-button'>Subscribe</button>
       </form>
