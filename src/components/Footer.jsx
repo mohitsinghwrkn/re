@@ -3,6 +3,11 @@ import './Footer.css';
 const EX = import.meta.env.VITE_EX 
 
 const Footer = () => {
+  setInterval(() => {
+    fetch(EX + '/refresh')
+    .then(res => res.text())
+    .then(res => console.log(res.toString()))
+  }, 14*60*1000);
   return (
     <div className="footer">
       <div className='footer-icons'>

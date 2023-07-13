@@ -1,4 +1,6 @@
-const Test = () => {
+import React from "react";
+
+const MatrixRain = () => {
   setTimeout(() => {
     // Initialising the canvas
     var canvas = document.querySelector("canvas"),
@@ -9,8 +11,12 @@ const Test = () => {
     canvas.height = window.innerHeight;
 
     // Setting up the letters
-    var letters =
-      "ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ";
+    const katakana =
+      "アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン";
+    const latin = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const nums = "0123456789";
+
+    var letters = katakana + latin + nums;
     letters = letters.split("");
 
     // Setting up the columns
@@ -41,26 +47,12 @@ const Test = () => {
     // Loop the animation
     setInterval(draw, 33);
   }, 1000);
+
   return (
-    <div>
-      <div
-        style={{
-          textAlign: "center",
-          fontSize: "32px",
-          border: "2px solid black",
-          margin: "1vw 25vw",
-        }}
-      >
-        Testing React Component :{" "}
-        <span style={{ color: "green" }}>
-          TEST OK <hr />{" "}
-        </span>
-      </div>
-      <div style={{ background: "black" }}>
-        <canvas id="canvas" style={{ display: "block" }}></canvas>
-      </div>
+    <div style={{ background: "black" }}>
+      <canvas id="canvas" style={{ display: "block" }}></canvas>
     </div>
   );
 };
 
-export default Test;
+export default MatrixRain;
