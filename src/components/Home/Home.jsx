@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import './Home.css';
 import Tiles from './Tiles';
 import Blog from '../Blogs/Blog';
-import img1 from '../../assets/mtrx.gif';
-import img2 from '../../assets/mtrx2.gif';
-import img3 from '../../assets/kal.png';
-import img4 from '../../assets/arc.png';
-import img5 from '../../assets/sud.png';
-import img6 from '../../assets/fsf.png';
-import img7 from '../../assets/ker.png';
-import img8 from '../../assets/py.png';
-import img9 from '../../assets/rpc.png';
-import img10 from '../../assets/rpc1.png';
+import img1 from '../../assets/0.png';
+import img2 from '../../assets/nodejs.png';
+import img3 from '../../assets/yarn.png';
+import img4 from '../../assets/rpc.png';
+import img5 from '../../assets/ker.png';
+import img6 from '../../assets/mtrx2.gif';
+import img7 from '../../assets/fsf.png';
+import img8 from '../../assets/rpc1.png';
+import img9 from '../../assets/vite.png';
+import img10 from '../../assets/mdb.png';
 
 function Home() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -76,7 +76,7 @@ function Home() {
         <br />
         <div className='image-box'>
           <img src={images[currentImage].src} alt={images[currentImage].alt} className="home-image1" />
-          {/* <img src={images[anotherImage].src} alt={images[anotherImage].alt} className="home-image1" />   */}
+          <img src={images[anotherImage].src} alt={images[anotherImage].alt} className="home-image1" />  
         </div>
         <br />
         <div className='button-container'>

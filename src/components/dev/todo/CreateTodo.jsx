@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
 const EX = import.meta.env.VITE_EX 
 
@@ -27,38 +26,31 @@ const CreateTodo = () => {
   }
 
   return (
-    <section className="container">
-      <Link to="/todo">
-        <button type="button" className="todo-btn todo-btn-back">
-          🔙 back
-        </button>
-      </Link>
-
-      <section className="todo-data">
-        <form onSubmit={handleSubmit} className="form-container" noValidate>
-          <label className="label" htmlFor="title">
-            Todo Title
+    <section style={{textAlign:"center", margin:"16px"}}>
+      <section >
+        <form onSubmit={handleSubmit}  noValidate>
+          <label  htmlFor="title">
+            TODO Title
           </label>
           <input
             type="text"
             name="title"
             value={todoInfo.title}
             onChange={handleChange}
-            className="input"
+            
           />
-          <label className="label" htmlFor="description">
-            Describe it !
+          <label  htmlFor="description">
+            TODO Description
           </label>
           <input
             type="textarea"
             name="description"
             value={todoInfo.description}
             onChange={handleChange}
-            className="input"
           />
-          <button type="submit" className="todo-btn">
-            ➕ create todo
-          </button>
+          <button type="submit" >
+            ➕  Create TODO
+          </button><hr />
         </form>
       </section>
     </section>

@@ -5,20 +5,19 @@ const TodoLists = ({ todoInfos, editHandler, deleteHandler }) => {
 
   return (
     <li key={_id}>
-      <div className="title-description">
-        <h2>{title}</h2>
-        <h1></h1>
-        <p>{description}</p>
+      <div >
+        <h2>@ {title}</h2>
+        <h4 >: {description}</h4>
       </div>
-      <h1></h1>
-      <div className="todo-btn-container">
-        <button className="todo-btn" name={_id} onClick={editHandler}>
+      <div >
+        <button  name={_id} onClick={editHandler}>
           🖊️
         </button>
-        <button className="todo-btn" name={_id} onClick={deleteHandler}>
+        <button  name={_id} onClick={deleteHandler}>
           🗑️
         </button>
       </div>
+      <hr />
     </li>
   );
 };

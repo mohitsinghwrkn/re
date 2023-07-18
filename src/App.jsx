@@ -22,6 +22,7 @@ import UserBlogs from './components/Blogs/UserBlogs';
 import TilesHtml from './components/Blogs/content/TilesHtml';
 import BlogData from './components/Blogs/BlogData';
 import AdminBlogs from './components/Blogs/AdminBlogs';
+import MatrixRain from './components/dev/MatrixRain'
 
 const App = () => {
   return (
@@ -47,9 +48,9 @@ const App = () => {
           <Route path='login' element={<Login/>}/> 
           <Route path='register' element={<Register/>}/> 
           <Route path='game' element={<Game/>}/> 
+          <Route path='matrixRain' element={<MatrixRain/>}/> 
           <Route path='test' element={<Test/>}/>
           <Route path='todo' element={<DisplayTodo/>}/>
-          <Route path='todoAdd' element={<CreateTodo/>}/>
           <Route path='profile' element={<Profile/>}/>
           <Route path='blogData' element={<BlogData/>}/>
           <Route path='tiles/html' element={<TilesHtml/>}/>

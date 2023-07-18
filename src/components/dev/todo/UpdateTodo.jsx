@@ -50,8 +50,8 @@ function UpdateTodo({ _id, closeHandler, updateHandler }) {
         onChange={handleChange}
       />
       <button type="submit" className="todo-btn">
-        ➕ Add
-      </button>
+        ➕ Update
+      </button><hr />
     </form>
   );
 }

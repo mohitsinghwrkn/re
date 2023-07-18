@@ -2,8 +2,14 @@
   text-align: center;
 }
 
+.image-box {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .home-image1 {
-  height: 25vw;
-  /* border-radius: .5vw; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} 
+  max-width: 45vw;
+  max-height: 45vh;
+}

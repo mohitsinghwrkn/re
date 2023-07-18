@@ -7,6 +7,7 @@ import todo from '../../assets/todo.png'
 import test from '../../assets/test.png'
 import be4 from '../../assets/be4.png'
 import create from '../../assets/create.png'
+import mtrx from '../../assets/mtrx.png'
 
 const Dev = () => {
   return (
@@ -66,6 +67,17 @@ const Dev = () => {
             <hr />
           </div>
         </div>
+        <div className='dev-box' >
+          <a href="/matrixRain" className='dev-anchor'>
+            <img src={mtrx} alt="" className='dev-image' />
+          </a>
+          <div className='dev-heading'>
+            <hr />
+            Matrix Rain
+            <hr />
+          </div>
+        </div>
+
         <div className='dev-box' >
           <a href="/test" className='dev-anchor'>
             <img src={test} alt="" className='dev-image' />
