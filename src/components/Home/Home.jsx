@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import Tiles from './Tiles';
 import Blog from '../Blogs/Blog';
@@ -70,6 +70,10 @@ function Home() {
     setAnotherImage(anotherImage === 0 ? images.length - 1 : anotherImage - 1);
   };
 
+  setTimeout(() => {
+    handleNextClick()    
+  }, 3000);
+
   return (
     <>
       <div className='home'>
@@ -83,7 +87,7 @@ function Home() {
           <button className="prev-button " onClick={handlePrevClick}>
             Prev
           </button>
-          <button className="next-button" onClick={handleNextClick}>
+          <button className="next-button" id='next-button' onClick={handleNextClick}>
             Next
           </button>
         </div>
