@@ -37,7 +37,7 @@ const Tiles = () => {
                 <img src={css} className='tile-image' />
                 <h1 className="tile-title">CSS</h1>
             </Link>
-            <Link to="/AdminBlogs" className='tile'>
+            <Link to="/AdminBlogs?js" className='tile'>
                 <img src={js} className='tile-image' />
                 <h1 className="tile-title">JavaScript</h1>
             </Link>

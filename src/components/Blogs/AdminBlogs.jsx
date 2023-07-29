@@ -5,8 +5,11 @@ const EX = import.meta.env.VITE_EX
 const AdminBlogs = () => {
     const [userBlogs, setUserBlogs] = useState([])
 
+    const urlString = window.location.href
+    let paramString = urlString.split('?')[1];
+
     useEffect(() => {
-        fetch(EX+'/ex/adminBlogs')
+        fetch(EX+'/ex/adminBlogs/' + paramString)
             .then(res => res.json())
             .then(res => setUserBlogs(res))
     }, [])
