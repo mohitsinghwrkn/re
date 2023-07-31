@@ -41,7 +41,7 @@ const Tiles = () => {
                 <img src={js} className='tile-image' />
                 <h1 className="tile-title">JavaScript</h1>
             </Link>
-            <Link to="/tiles/react" className='tile'>
+            <Link to="/blogData?html" className='tile'>
                 <img src={react} className='tile-image' />
                 <h1 className="tile-title">React</h1>
             </Link>
