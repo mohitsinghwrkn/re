@@ -31,11 +31,11 @@ const AboutUs = () => {
       <hr style={{ margin: "0 10vw 2vw" }} />
       <h3 style={{ textAlign: "center", margin: "2vw" }}>
         {" "}
-        <u></u>In this initial development phase I'm solo working on every node
-        of this project as a FULLSTACK DEVELOPER
+        {/* In this initial development phase I'm solo working on every node
+        of this project as a FULLSTACK DEVELOPER */}
       </h3>
       <div className="aboutUs-profiles">
-        <div className="aboutUs-profile">
+        {/* <div className="aboutUs-profile">
           <img src={Mohit} alt="" className="aboutUs-image" />
           <h1>Mohit Singh</h1>
           <p>Website Developer</p>
@@ -48,8 +48,8 @@ const AboutUs = () => {
           >
             <button className="aboutUs-button">contact</button>
           </a>
-        </div>
-        {/* <div className='aboutUs-profile'>
+        </div> */}
+        <div className='aboutUs-profile'>
           <img src={Ayush} alt="" className='aboutUs-image' />
           <h1>Ayush Sharma</h1>
           <p>Frontend Developer</p>
@@ -72,7 +72,7 @@ const AboutUs = () => {
           <p>I ❤ to Design</p>
           <p>smritykumari20@maya.edu.in</p>
           <a href="mailto:smritykumari20@maya.edu.in?subject='Hello from Abstract!'&body='Just popped in to say hello'"><button className='aboutUs-button'>contact</button></a>
-        </div> */}
+        </div>
       </div>
     </div>
   );

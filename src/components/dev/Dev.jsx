@@ -10,6 +10,9 @@ import create from '../../assets/create.png'
 import mtrx from '../../assets/mtrx.png'
 
 const Dev = () => {
+  const cdn = "https://www.stackscale.com/wp-content/uploads/2021/08/cdn-content-delivery-network-infograhpics-stackscale.jpg",
+  nApi = "https://precog.com/wp-content/uploads/2021/01/News-API-Logo.svg",
+  countries = "https://www.worldatlas.com/r/w1300-q80/upload/f4/e0/49/shutterstock-1665254809.png"
   return (
     <>
       <div className='dev'>
@@ -79,6 +82,37 @@ const Dev = () => {
         </div>
 
         <div className='dev-box' >
+          <a href="/newsApi" className='dev-anchor'>
+            <img src={nApi} alt="" className='dev-image' />
+          </a>
+          <div className='dev-heading'>
+            <hr />
+            NewsApi
+            <hr />
+          </div>
+        </div>
+                <div className='dev-box' >
+          <a href="/cdn" className='dev-anchor'>
+            <img src={cdn} alt="" className='dev-image' />
+          </a>
+          <div className='dev-heading'>
+            <hr />
+            CDN
+            <hr />
+          </div>
+        </div>
+        <div className='dev-box' >
+          <a href="/countriesApi" className='dev-anchor'>
+            <img src={countries} alt="" className='dev-image' />
+          </a>
+          <div className='dev-heading'>
+            <hr />
+            CountriesApi
+            <hr />
+          </div>
+        </div>
+
+        <div className='dev-box' >
           <a href="/test" className='dev-anchor'>
             <img src={test} alt="" className='dev-image' />
           </a>
@@ -88,6 +122,7 @@ const Dev = () => {
             <hr />
           </div>
         </div>
+
         <div className='dev-box' >
           <a href="/backend" className='dev-anchor'>
             <img src={be4} alt="" className='dev-image' />

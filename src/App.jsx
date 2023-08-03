@@ -23,6 +23,9 @@ import TilesHtml from './components/Blogs/content/TilesHtml';
 import BlogData from './components/Blogs/BlogData';
 import AdminBlogs from './components/Blogs/AdminBlogs';
 import MatrixRain from './components/dev/MatrixRain'
+import Cdn from './components/dev/Cdn';
+import NewsApi from './components/dev/API/NewsApi';
+import Countries from './components/dev/API/Countries';
 
 const App = () => {
   return (
@@ -54,6 +57,9 @@ const App = () => {
           <Route path='profile' element={<Profile/>}/>
           <Route path='blogData' element={<BlogData/>}/>
           <Route path='tiles/html' element={<TilesHtml/>}/>
+          <Route path='newsApi' element={<NewsApi/>}/>
+          <Route path='CountriesApi' element={<Countries/>}/>
+          <Route path='cdn' element={<Cdn/>}/>
           <Route path='*' element={<Nothing/>}/> 
         </Route >
       </Routes>
